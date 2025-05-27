@@ -62,6 +62,7 @@ router.put('/books/:id', authMiddleware, async (req, res, next) => {
   }
 });
 
+
 router.delete('/books/:id', authMiddleware, async (req, res, next) => {
   try {
     const book = await Book.findByIdAndDelete(req.params.id);
