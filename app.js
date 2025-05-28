@@ -4,8 +4,7 @@ const morgan = require('morgan');
 const bookRouter = require('./routes/books');
 const authRouter = require('./routes/auth');
 const errorHandler = require('./middlewares/errorHandler');
-const punycode = require('punycode/');
-
+// Remove the punycode import line
 
 const app = express();
 
